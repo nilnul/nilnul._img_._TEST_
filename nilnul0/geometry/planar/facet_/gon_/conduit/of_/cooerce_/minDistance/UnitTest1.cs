@@ -91,69 +91,79 @@ namespace nilnul.geometry._planar_._TEST_.facet_.gon_.conduit.of_.minDistanceNot
 
 
 
-			}
-			var file = nilnul.fs.folder_.tmp.denote_.mainVered_._NextX.SpearTxt(".jpg");
+				}
+				var file = nilnul.fs.folder_.tmp.denote_.mainVered_._NextX.SpearTxt(".jpg");
 
-			img.Save(
-				file
+				img.Save(
+					file
+
+				);
+
+				nilnul.fs.file._ExeX.Exe(file);
+			}
+		}
+
+		/// <summary>
+		/// see nilnul.img
+		/// </summary>
+		public System.Collections.Generic.IEnumerable<planar.Point4dblI> TestMethod1()
+		{
+
+			var facet = new nilnul.geometry.planar.facet_.Gon4dbl(
+				new planar.cycle_.gon_.Facade4dbl(
+						(71, 89)
+						,
+						(665, 52)
+						,
+						(840, 590)
+						,
+						(601, 482)
+						,
+						(608, 238)
+						,
+						(456, 253)
+						,
+						(474, 227)
+						,
+						(430, 240)
+						,
+						(595, 170)  //the point with the nearest angel to the ray. note y points down. so this needs to be bigger to be lower
+						,
+						(319, 251)
+						,
+						(342, 597)
+						,
+						(138, 572)
+				)
+				,
+				new planar.cycle_.gon_.Antiwise4dbl(
+					(292, 164)
+					,
+					(188, 268)
+					,
+					(275, 495)
+				)
+			);
+
+
+			nilnul.geometry.planar.cloze_.gons.draw.U1.show(
+				800, facet.holes.Select(h => h.vertexes).Append(facet.contour.vertexes).ToArray()
 
 			);
 
-			nilnul.fs.file._ExeX.Exe(file);
+			/// <see cref=" int geometry test"/>
+			//var conduit = nilnul.geometry.planar.facet_.gon_.conduit.of_..coerce_._MinDistanceXpn4dblX.Of(
+			//	facet
+			//);
+
+			var conduit = nilnul.geometry.planar.facet_.gon_.conduit.of_.coerce_._MinCuspX.Of(
+				facet
+			);
+
+
+			return conduit;
+
+
 		}
 	}
-
-	/// <summary>
-	/// see nilnul.img
-	/// </summary>
-	public System.Collections.Generic.IEnumerable<planar.Point4dblI> TestMethod1()
-	{
-
-		var facet = new nilnul.geometry.planar.facet_.Gon4dbl(
-			new planar.cycle_.gon_.Facade4dbl(
-					(71, 89)
-					,
-					(665, 52)
-					,
-					(840, 590)
-					,
-					(601, 482)
-					,
-					(608, 238)
-					,
-					(456, 253)
-					,
-					(474, 227)
-					,
-					(430, 240)
-					,
-					(595, 170)  //the point with the nearest angel to the ray. note y points down. so this needs to be bigger to be lower
-					,
-					(319, 251)
-					,
-					(342, 597)
-					,
-					(138, 572)
-			)
-			,
-			new planar.cycle_.gon_.Antiwise4dbl(
-				(292, 164)
-				,
-				(188, 268)
-				,
-				(275, 495)
-			)
-		);
-
-			;
-
-		var conduit = nilnul.geometry.planar.facet_.gon_.conduit.of_.coerce_._MinDistanceXpn4dblX.Of(
-			facet
-		);
-
-		return conduit;
-
-
-	}
-}
 }

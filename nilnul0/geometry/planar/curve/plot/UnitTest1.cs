@@ -48,14 +48,10 @@ namespace nilnul.geometry.planar.curve.plot
 
 			var img = new Bitmap(sizeInt.Width + 3, sizeInt.Height + 3);
 
-
-
 			using (var g = Graphics.FromImage(img))
 			{
 				var pointF = bounding.point.toPointF();
 				var matrix = new System.Drawing.Drawing2D.Matrix();
-
-
 
 				//var scale = nilnul.num.real.co.band_.MinDbl.Singleton.band(
 				//	new num.real.CoDbl(
@@ -77,7 +73,6 @@ namespace nilnul.geometry.planar.curve.plot
 				g.Transform = matrix;
 				;
 				g.DrawBeziers(new Pen(Color.Red, 3), pointsF);
-
 
 			}
 			var file = nilnul.fs.folder_.tmp.denote_.mainVered_._NextX.SpearTxt(".jpg");

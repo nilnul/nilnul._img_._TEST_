@@ -331,3 +331,13 @@ healthchecksdb
 MigrationBackup/
 
 **/.*/
+
+**/*.out(![Gg]it)*
+**/*(!git/
+*(![Gg]it)*
+*).git/
+*(.git/
+*(!git/
+*([Gg]it/
+.*/
+*.skb

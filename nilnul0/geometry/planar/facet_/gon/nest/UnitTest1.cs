@@ -10,6 +10,9 @@ namespace nilnul.geometry._planar_._TEST_.facet_.gon.nest
 	[TestClass]
 	public class UnitTest1
 	{
+		/// <summary>
+		/// draw each facet as two cycles;
+		/// </summary>
 		[TestMethod]
 		public void TestMethod1()
 		{

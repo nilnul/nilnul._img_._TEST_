@@ -13,18 +13,21 @@ namespace nilnul.geometry._planar_._TEST_.facet_.gon_.conduit.nest
 	[TestClass]
 	public class UnitTest1
 	{
+		/// <summary>
+		/// draw each as a conduit.
+		/// </summary>
 		[TestMethod]
 		public void TestMethod1()
 		{
 			var width = 400;
 			var font = new Font("Times New Roman", (int) (width*.95));
 			var nests = nilnul.geometry.planar.facet_.gon.nests.of_.cycles_.nonjoint_._ByForestX.Nesteds(
-				'6'
-				//'回'
+				//'6'
+				'回'
 				//'泳'
 				//'A'
 
-				,font
+				, font
 			);
 
 
@@ -93,7 +96,7 @@ namespace nilnul.geometry._planar_._TEST_.facet_.gon_.conduit.nest
 									}
 
 
-									var conduit = nilnul.geometry.planar.facet_.gon_.conduit.of_._Coerce4dblX.Of(
+									var conduit = nilnul.geometry.planar.facet_.gon_.conduit.of_.coerce_._MinCuspX.Of(
 										facet
 									);
 
