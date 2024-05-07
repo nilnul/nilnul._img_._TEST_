@@ -392,6 +392,7 @@
     <Compile Include="nilnul0\geometry\planar\cloze_\gon\draw\U1.cs" />
     <Compile Include="nilnul0\geometry\planar\cloze_\gon_\nonshortcut\of_\_points_\by_\direction\UnitTest1.cs" />
     <Compile Include="nilnul0\geometry\planar\cloze_\gon_\nonshortcut\of_\_points_\by_\bisect\UnitTest1.cs" />
+    <Compile Include="nilnul0\geometry\planar\cloze_\gon_\nonshortcut\of_\_points_\by_\UnitTest1.cs" />
     <Compile Include="nilnul0\geometry\planar\coil\_draw_\IFill.cs" />
     <Compile Include="nilnul0\geometry\planar\coil_\gon_\hex_\hexagram\draw\UnitTest1.cs" />
     <Compile Include="nilnul0\geometry\planar\curve_\polar_\IRhodonea.cs" />
